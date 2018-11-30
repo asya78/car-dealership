@@ -44,7 +44,7 @@ class Customer
     private $isYoungDriver;
 
     /**
-     * @var ArrayCollection Sale[]
+     * @var ArrayCollection
      *
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Sale", mappedBy="customer")
      */

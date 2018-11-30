@@ -37,7 +37,7 @@ class Supplier
     private $isImporter;
 
     /**
-     * @var ArrayCollection Part[]
+     * @var ArrayCollection|Part[]
      *
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Part", mappedBy="supplier")
      */

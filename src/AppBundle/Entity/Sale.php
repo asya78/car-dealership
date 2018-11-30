@@ -30,14 +30,15 @@ class Sale
 
     /**
      * In one sale, only one car can be sold.
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Sale")
-     * @ORM\JoinColumn(name="customer_id",referencedColumnName="id")
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Car")
+     * @ORM\JoinColumn(name="car_id",referencedColumnName="id")
      */
     private $car;
 
     /**
      * @var
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Customer", inversedBy="sales")
+     * @ORM\JoinColumn(name="customer_id",referencedColumnName="id")
      */
     private $customer;
 

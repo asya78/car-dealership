@@ -47,6 +47,13 @@ class Part
      */
     private $supplier;
 
+    /**
+     * @var ArrayCollection
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Car",mappedBy="parts")
+     */
+    private $cars;
+
+
 
     /**
      * Get id

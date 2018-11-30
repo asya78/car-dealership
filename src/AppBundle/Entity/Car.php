@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -41,6 +42,17 @@ class Car
      * @ORM\Column(name="travelledDistance", type="bigint")
      */
     private $travelledDistance;
+
+    /**
+     * Many Cars have Many Parts.
+     * @var ArrayCollection|Part[]
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Part")
+     * @ORM\JoinTable(name="cars_parts",
+     *      joinColumns={@ORM\JoinColumn(name="car_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="part_id", referencedColumnName="id")}
+     *      )
+     */
+    private $parts;
 
 
     /**
