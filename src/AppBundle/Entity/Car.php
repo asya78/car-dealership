@@ -54,6 +54,11 @@ class Car
      */
     private $parts;
 
+    public function __construct()
+    {
+        $this->parts = new Part();
+    }
+
 
     /**
      * Get id

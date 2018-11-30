@@ -136,5 +136,39 @@ class Part
     {
         return $this->quantity;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSupplier()
+    {
+        return $this->supplier;
+    }
+
+    /**
+     * @param mixed $supplier
+     */
+    public function setSupplier($supplier)
+    {
+        $this->supplier = $supplier;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getCars()
+    {
+        return $this->cars;
+    }
+
+    /**
+     * @param ArrayCollection $cars
+     */
+    public function setCars($cars)
+    {
+        $this->cars = $cars;
+    }
+
+
 }
 

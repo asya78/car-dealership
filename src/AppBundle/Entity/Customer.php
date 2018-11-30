@@ -50,6 +50,11 @@ class Customer
      */
     private $sales;
 
+    public function __construct()
+    {
+        $this->$sales = new Sale();
+    }
+
 
     /**
      * Get id

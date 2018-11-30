@@ -43,6 +43,11 @@ class Supplier
      */
     private $parts;
 
+    public function __construct()
+    {
+        $this->parts = new ArrayCollection();
+    }
+
     /**
      * Get id
      *
