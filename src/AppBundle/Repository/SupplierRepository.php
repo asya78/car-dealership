@@ -2,6 +2,9 @@
 
 namespace AppBundle\Repository;
 
+
+use AppBundle\Entity\Supplier;
+
 /**
  * SupplierRepository
  *
@@ -10,4 +13,14 @@ namespace AppBundle\Repository;
  */
 class SupplierRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getAllSupplier(){
+
+
+        return $this->getEntityManager()->getRepository(Supplier::class)->createQueryBuilder('s')
+            ->orderBy('s.id')
+            ->where('s.isImporter', 'Yes')
+            ->getQuery()
+            ->getResult();
+
+    }
 }

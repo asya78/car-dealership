@@ -52,7 +52,7 @@ class Customer
 
     public function __construct()
     {
-        $this->$sales = new Sale();
+        $this->sales = new ArrayCollection();
     }
 
 
@@ -99,7 +99,7 @@ class Customer
      */
     public function setBirthDate($birthDate)
     {
-        $this->birthDate = $birthDate;
+        $this->birthDate = substr($birthDate,0,10);
 
         return $this;
     }

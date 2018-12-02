@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Entity\Car;
+
 /**
  * CarRepository
  *
@@ -10,4 +12,17 @@ namespace AppBundle\Repository;
  */
 class CarRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getAllCarBy($make){
+
+        $make = ucfirst($make);
+
+        return $this
+            ->createQueryBuilder('p')
+            ->where('p.make = :make')
+            ->setParameter('make', $make)
+            ->orderBy('p.model','ASC')
+            ->orderBy('p.travelledDistance', 'DESC')
+            ->getQuery()
+            ->getResult();
+    }
 }

@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40361d28-049b-468e-997d-301b264d23a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/car/make.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c8bd72b-a2b1-46eb-98a2-71a2f5229384.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c8bd72b-a2b1-46eb-98a2-71a2f5229384.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Car.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Part.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Part.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Supplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Supplier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/CarRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/CarRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/CustomerRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/CustomerRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/SupplierRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/SupplierRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="car-dealership: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Car Dealership" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="car-dealership: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="cars: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -56,79 +62,85 @@
     <session id="-1051589409">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.161" value="1" />
-          <entry key="project.open.time.27" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="DATABASE/9c8bd72b-a2b1-46eb-98a2-71a2f5229384" value="3" />
           <entry key="dist" value="1" />
-          <entry key="php" value="16" />
+          <entry key="php" value="5" />
           <entry key="sql" value="1" />
-          <entry key="yml" value="8" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="16" />
+          <entry key="PHP" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="1" />
-          <entry key="UML" value="3" />
-          <entry key="YAML" value="8" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="669" />
+          <entry key="php" value="369" />
           <entry key="txt" value="32" />
-          <entry key="yml" value="23" />
+          <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="669" />
+          <entry key="PHP" value="369" />
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="YAML" value="23" />
+          <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
     </session>
     <session id="1869639066">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="DATABASE/9c8bd72b-a2b1-46eb-98a2-71a2f5229384" value="2" />
-          <entry key="php" value="4" />
-          <entry key="yml" value="2" />
+          <entry key="SCHEMA:car-dealership" value="5" />
+          <entry key="php" value="56" />
+          <entry key="twig" value="25" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="4" />
-          <entry key="UML" value="2" />
-          <entry key="YAML" value="2" />
+          <entry key="PHP" value="56" />
+          <entry key="Twig" value="25" />
+          <entry key="UML" value="7" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="368" />
+          <entry key="php" value="2518" />
+          <entry key="twig" value="58" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="368" />
+          <entry key="PHP" value="2518" />
+          <entry key="Twig" value="58" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -137,77 +149,60 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Part.php">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CarController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Supplier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+            <state relative-caret-position="243">
+              <caret line="39" selection-start-line="39" selection-start-column="2" selection-end-line="45" selection-end-column="7" />
               <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="79" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
-              <folding>
-                <element signature="e#40#65#0#PHP" expanded="true" />
-                <element signature="e#435#460#0#PHP" expanded="true" />
+                <element signature="e#573#588#1#PHP" expanded="true" />
+                <element signature="e#1176#1191#1#PHP" expanded="true" />
+                <element signature="e#1244#1264#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CustomerRepository.php">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/car/make.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Car.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+            <state relative-caret-position="51">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
+                <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Customer.php">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/car/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
+                <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Sale.php">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/car/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CarRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -220,17 +215,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20181130034403.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Sale.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Part.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Supplier.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Car.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Customer.php" />
+        <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20181130034403.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Part.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Sale.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/PartType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/customer/show.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/CustomerRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PartController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/SupplierController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/SupplierRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Customer.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CustomerController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CarController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/CarRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/car/make.html.twig" />
       </list>
     </option>
   </component>
@@ -328,6 +332,56 @@
             <path>
               <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
               <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="part" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="supplier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,7 +409,19 @@
               <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealership" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealership" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -397,18 +463,21 @@
       <workItem from="1543516047291" duration="286000" />
       <workItem from="1543522141021" duration="3372000" />
       <workItem from="1543547224879" duration="5071000" />
-      <workItem from="1543572961956" duration="1686000" />
+      <workItem from="1543552762611" duration="10000" />
+      <workItem from="1543586160786" duration="2116000" />
+      <workItem from="1543659610122" duration="2083000" />
+      <workItem from="1543692885804" duration="11147000" />
+      <workItem from="1543781632624" duration="5300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21609000" />
+    <option name="totallyTimeSpent" value="37236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27665246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -421,13 +490,34 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49626866" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50373137" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" visible="true" weight="0.2426869" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159913" side_tool="true" weight="0.30227518" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32942432" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27345416" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" visible="true" weight="0.2426869" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159913" side_tool="true" weight="0.30227518" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32942432" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -440,8 +530,16 @@
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml" />
     <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20181130032227.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="77" column="105" selection-start-line="77" selection-start-column="105" selection-end-line="77" selection-end-column="105" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20181130034403.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -454,23 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20181130043428.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="19" lean-forward="true" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -487,46 +568,127 @@
           <ID>DATABASE</ID>
           <OriginalElement>9c8bd72b-a2b1-46eb-98a2-71a2f5229384</OriginalElement>
           <nodes>
-            <node x="0.0" y="499.0">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.migration_versions</node>
-            <node x="335.125" y="336.0">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.sales</node>
-            <node x="0.0" y="0.0">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.suppliers</node>
-            <node x="404.0" y="157.0">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.customers</node>
-            <node x="179.0" y="157.0">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars</node>
-            <node x="91.875" y="358.5">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars_parts</node>
-            <node x="4.0" y="146.0">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.parts</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.migration_versions</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.sales</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.suppliers</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.customers</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars_parts</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.parts</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.sales" target="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.customers">
-              <point x="39.5" y="-59.0" />
-              <point x="453.625" y="311.0" />
-              <point x="495.5" y="311.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.sales" target="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars">
-              <point x="-39.5" y="-59.0" />
-              <point x="374.625" y="311.0" />
-              <point x="332.75" y="311.0" />
-              <point x="51.25" y="59.0" />
-            </edge>
-            <edge source="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.parts" target="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.suppliers">
-              <point x="0.0" y="-70.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars_parts" target="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.parts">
-              <point x="-32.0" y="-36.5" />
-              <point x="123.875" y="311.0" />
-              <point x="81.5" y="311.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars_parts" target="9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars">
-              <point x="32.0" y="-36.5" />
-              <point x="187.875" y="311.0" />
-              <point x="230.25" y="311.0" />
-              <point x="-51.25" y="59.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="386.5" y="283.5" />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="310.0" y="274.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Sale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/PartType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/SaleRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/SupplierType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PartRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Supplier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#36#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SupplierController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Part.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#547#572#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/SupplierRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+          <folding>
+            <element signature="e#36#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/9c8bd72b-a2b1-46eb-98a2-71a2f5229384.SCHEMA:car-dealership">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>9c8bd72b-a2b1-46eb-98a2-71a2f5229384.SCHEMA:car-dealership</OriginalElement>
+          <nodes>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.migration_versions</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.sales</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.suppliers</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.customers</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.cars_parts</node>
+            <node x="" y="">9c8bd72b-a2b1-46eb-98a2-71a2f5229384.TABLE:car-dealership.parts</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="596.0" y="275.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
@@ -535,65 +697,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Part.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PartController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Car.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        <state relative-caret-position="408">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
+            <element signature="e#40#66#0#PHP" expanded="true" />
+            <element signature="e#626#642#1#PHP" expanded="true" />
+            <element signature="e#686#708#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Customer.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/customer/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="289">
+          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
           <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
+            <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Sale.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/customer/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Supplier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        <state relative-caret-position="323">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
+            <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="79" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+        <state relative-caret-position="538">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding>
-            <element signature="e#40#65#0#PHP" expanded="true" />
-            <element signature="e#435#460#0#PHP" expanded="true" />
+            <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="e#654#674#1#PHP" expanded="true" />
+            <element signature="e#718#744#0#PHP" expanded="true" />
+            <element signature="e#1033#1058#0#PHP" expanded="true" />
+            <element signature="e#1371#1391#1#PHP" expanded="true" />
+            <element signature="e#1500#1525#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CustomerRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1615">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="e#36#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/supplier/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/part/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/part/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/part/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/part/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/car/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/car/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="39" selection-start-line="39" selection-start-column="2" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <element signature="e#573#588#1#PHP" expanded="true" />
+            <element signature="e#1176#1191#1#PHP" expanded="true" />
+            <element signature="e#1244#1264#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CarRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/car/make.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

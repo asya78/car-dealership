@@ -12,7 +12,8 @@ class CustomerRepository extends \Doctrine\ORM\EntityRepository
 {
     public function getAllCustomers($order){
 
-        return $this->createQueryBuilder('customer')
+        return $this
+            ->createQueryBuilder('customer')
             ->orderBy('customer.birthDate',':sort')
             ->setParameter('sort', $order)
             ->getQuery()
