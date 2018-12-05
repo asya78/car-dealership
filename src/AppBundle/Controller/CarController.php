@@ -10,14 +10,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 /**
  * Car controller.
  *
- * @Route("car")
  */
 class CarController extends Controller
 {
     /**
      * Lists all car entities.
      *
-     * @Route("/", name="car_index")
+     * @Route("/car", name="car_index")
      * @Method("GET")
      */
     public function indexAction()
@@ -34,20 +33,22 @@ class CarController extends Controller
     /**
      * Finds and displays a car entity.
      *
-     * @Route("/{id}", name="car_show")
+     * @Route("/car/{id}", name="car_show")
      * @Method("GET")
      */
-//    public function showAction($car)
-//    {
-//
-//        return $this->render('car/show.html.twig', array(
-//            'car' => $car,
-//        ));
-//    }
+    public function showAction($car)
+    {
+
+        return $this->render('car/show.html.twig', array(
+            'car' => $car,
+        ));
+    }
 
     /**
-     * @Route("/{make}")
+     * @Route("/cars/{make}")
      * @Method("GET")
+     * @param $make
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function makeAction($make)
     {
@@ -55,6 +56,6 @@ class CarController extends Controller
 
         $cars = $em->getRepository('AppBundle:Car')->getAllCarBy($make);
 
-        return $this->render('car/make.html.twig', array('car' => $cars));
+        return $this->render('car/make.html.twig', array('cars' => $cars));
     }
 }

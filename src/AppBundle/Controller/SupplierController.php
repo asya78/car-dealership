@@ -11,14 +11,13 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Supplier controller.
  *
- * @Route("supplier")
  */
 class SupplierController extends Controller
 {
     /**
      * Lists all supplier entities.
      *
-     * @Route("/", name="supplier_index")
+     * @Route("/supplier", name="supplier_index")
      * @Method("GET")
      */
     public function indexAction()
@@ -35,7 +34,7 @@ class SupplierController extends Controller
     /**
      * Creates a new supplier entity.
      *
-     * @Route("/new", name="supplier_new")
+     * @Route("/supplier/new", name="supplier_new")
      * @Method({"GET", "POST"})
      */
     public function newAction(Request $request)
@@ -61,7 +60,7 @@ class SupplierController extends Controller
     /**
      * Finds and displays a supplier entity.
      *
-     * @Route("/{id}", name="supplier_show")
+     * @Route("/supplier/{id}", name="supplier_show")
      * @Method("GET")
      */
     public function showAction(Supplier $supplier)
@@ -77,7 +76,7 @@ class SupplierController extends Controller
     /**
      * Displays a form to edit an existing supplier entity.
      *
-     * @Route("/{id}/edit", name="supplier_edit")
+     * @Route("/supplier/{id}/edit", name="supplier_edit")
      * @Method({"GET", "POST"})
      */
     public function editAction(Request $request, Supplier $supplier)
@@ -102,7 +101,7 @@ class SupplierController extends Controller
     /**
      * Deletes a supplier entity.
      *
-     * @Route("/{id}", name="supplier_delete")
+     * @Route("/supplier/{id}", name="supplier_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, Supplier $supplier)
@@ -136,16 +135,17 @@ class SupplierController extends Controller
     }
 
     /**
-     * @Route("/local")
+     * @Route("/suppliers/{isImporter}")
      */
-    public function localSupplier()
+    public function localSupplier($isImporter)
     {
 
-        $suppliers = $this->getDoctrine()
+        $suppliers = $this
+            ->getDoctrine()
             ->getRepository(Supplier::class)
-            ->getAllSupplier();
+            ->getSupplierByImporter($isImporter);
 
-        return $this->render('supplier/show.html.twig',array('supplier'=>$suppliers));
+        return $this->render('supplier/local.html.twig',array('suppliers'=>$suppliers));
     }
 
 }

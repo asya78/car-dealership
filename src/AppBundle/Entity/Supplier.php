@@ -43,6 +43,14 @@ class Supplier
      */
     private $parts;
 
+    /**
+     * @return Part[]|ArrayCollection
+     */
+    public function getParts()
+    {
+        return $this->parts;
+    }
+
     public function __construct()
     {
         $this->parts = new ArrayCollection();

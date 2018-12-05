@@ -13,14 +13,19 @@ use AppBundle\Entity\Supplier;
  */
 class SupplierRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function getAllSupplier(){
 
 
-        return $this->getEntityManager()->getRepository(Supplier::class)->createQueryBuilder('s')
-            ->orderBy('s.id')
-            ->where('s.isImporter', 'Yes')
-            ->getQuery()
-            ->getResult();
+        public function getSupplierByImporter($isImporter){
 
-    }
+            if ($isImporter == 'local') $destination = 0; else $destination = 1;
+            return $this
+                ->createQueryBuilder('s')
+                ->where('s.isImporter = :destination')
+                ->setParameter('destination', $destination)
+                ->addOrderBy('s.id', 'ASC')
+                ->getQuery()
+                ->getResult();
+
+        }
+
 }

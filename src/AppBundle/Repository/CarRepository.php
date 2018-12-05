@@ -20,8 +20,8 @@ class CarRepository extends \Doctrine\ORM\EntityRepository
             ->createQueryBuilder('p')
             ->where('p.make = :make')
             ->setParameter('make', $make)
-            ->orderBy('p.model','ASC')
-            ->orderBy('p.travelledDistance', 'DESC')
+            ->addOrderBy('p.model','ASC')
+            ->addOrderBy('p.travelledDistance', 'DESC')
             ->getQuery()
             ->getResult();
     }
